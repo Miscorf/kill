@@ -11,16 +11,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/demo")
 public class DemoController {
-
-    /***********************************
-     * 用途说明:
-     * 返回值说明:
-     ***********************************/
     
-    
+    /*
+     * @Author Li HuiKun 
+     * @Description 测试接口
+     * @Param
+     * @return 
+     **/
     @RequestMapping("hello")
     public String hello(Model model){
-
         model.addAttribute("name","xx");
         return "hello";
     }
