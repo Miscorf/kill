@@ -2,6 +2,8 @@ package com.mis.kill.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.mis.kill.pojo.User;
+import com.mis.kill.vo.LoginVo;
+import com.mis.kill.vo.RespBean;
 
 /**
  * <p>
@@ -13,4 +15,5 @@ import com.mis.kill.pojo.User;
  */
 public interface IUserService extends IService<User> {
 
+    RespBean login(LoginVo loginVo);
 }

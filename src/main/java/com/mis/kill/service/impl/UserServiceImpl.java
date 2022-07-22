@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.mis.kill.mapper.UserMapper;
 import com.mis.kill.pojo.User;
 import com.mis.kill.service.IUserService;
+import com.mis.kill.vo.LoginVo;
+import com.mis.kill.vo.RespBean;
 import org.springframework.stereotype.Service;
 
 /**
@@ -17,4 +19,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
+    @Override
+    public RespBean login(LoginVo loginVo) {
+        return null;
+    }
 }
