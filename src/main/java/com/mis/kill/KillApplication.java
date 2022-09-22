@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.mis.kill.pojo")
+@MapperScan("com.mis.kill")
 public class KillApplication {
 
     public static void main(String[] args) {

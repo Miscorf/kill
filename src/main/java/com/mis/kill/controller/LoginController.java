@@ -6,6 +6,7 @@ import com.mis.kill.vo.RespBean;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -16,7 +17,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/login")
 @Slf4j
+@CrossOrigin
 public class LoginController {
+
     @Autowired
     private IUserService userService;
 
@@ -26,7 +29,9 @@ public class LoginController {
      * @return
      */
     @RequestMapping("/toLogin")
-    public String toLogin() {
+    // @ResponseBody
+    public String  toLogin() {
+
         return "login";
     }
 
