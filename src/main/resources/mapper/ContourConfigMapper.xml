@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mis.kill.mapper.ContourConfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mis.kill.pojo.ContourConfig">
+        <id column="id" property="id" />
+        <result column="x_size" property="xSize" />
+        <result column="y_size" property="ySize" />
+        <result column="base_url" property="baseurl" />
+
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, x_size, y_size, base_url
+    </sql>
+
+</mapper>
