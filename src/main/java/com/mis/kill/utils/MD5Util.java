@@ -3,7 +3,6 @@ package com.mis.kill.utils;
 
 import org.apache.commons.codec.digest.DigestUtils;
 
-import static java.lang.System.out;
 
 /**
  * @Author Li HuiKun
